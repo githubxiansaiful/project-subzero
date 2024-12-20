@@ -373,6 +373,12 @@ a {
   border-radius: 16px;
   padding: 15px 25px;
   line-height: 1.3;
+  transition: .3s;
+}
+.xs-btn-style:hover {
+  background: #D82024;
+  border-color: #D82024;
+  color: #fff;
 }
 .hero-countdown {
   position: absolute;
@@ -435,10 +441,18 @@ a {
     padding-left: 10px;
   }
   .hero-countdown h2 {
-    font-size: 26px;
+    font-size: 32px;
+    margin-bottom: 5px;
   }
   .hero-countdown p {
     font-size: 10px;
+  }
+  .hero-section {
+    padding-top: 200px;
+    padding-bottom: 300px;
+  }
+  .hero-countdown {
+    width: 83%;
   }
 }
 @media all and (max-width: 499px) {
@@ -489,3 +503,91 @@ a {
   content: "+";
 }
 /* Hero Section CSS End */
+
+/* Choose your car type Section */
+.choose-your-car-type {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background: #101010;
+  border-bottom: 8px solid #D82024;
+}
+.car-type-section-title h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+  color: #fff;
+  line-height: 1.3;
+}
+.car-types {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.single-car-type .car-type-img img {
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+}
+.single-car-type {
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  transition: .3s;
+  border-radius: 30px;
+}
+.single-car-type:hover {
+  border-radius: 30px;
+  transform: scale(1.05);
+}
+.car-type-content {
+  position: absolute;
+  z-index: 9999;
+  bottom: 30px;
+  left: 20px;
+}
+.car-type-content h2 {
+  font-size: 37px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+.car-type-content a {
+  border: 1px solid #fff;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 16px;
+  padding: 15px 15px;
+  line-height: 1.3;
+  transition: .3s;
+}
+.car-type-content a:hover {
+  background: #D82024;
+  border-color: #D82024;
+  color: #fff;
+}
+.car-type-img {
+  position: relative;
+}
+.car-type-img:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#000000b3, #e9090ea3);
+  opacity: .6;
+}
+@media all and (max-width: 767px) {
+  .car-types {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .car-type-section-title h2 {
+    font-size: 32px;
+  }
+  .car-type-content h2 {
+    font-size: 30px;
+  }
+}
