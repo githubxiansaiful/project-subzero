@@ -459,4 +459,25 @@ a {
     padding-bottom: 240px;
   }
 }
+@media all and (max-width: 349px) {
+  .hero-countdown {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 0;
+    padding-left: 0;
+    clip-path: unset;
+  }
+  .hero-countdown h2 {
+    font-size: 30px;
+  }
+  .hero-section {
+    padding-top: 170px;
+    padding-bottom: 330px;
+  }
+  .hero-cover-content h1 {
+    font-size: 30px;
+  }
+}
 /* Hero Section CSS End */
