@@ -504,7 +504,7 @@ a {
 }
 /* Hero Section CSS End */
 
-/* Choose your car type Section */
+/* Choose your car type Section Start */
 .choose-your-car-type {
   padding-top: 40px;
   padding-bottom: 50px;
@@ -591,3 +591,4 @@ a {
     font-size: 30px;
   }
 }
+/* Choose your car type Section End */
