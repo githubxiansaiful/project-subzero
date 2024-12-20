@@ -30,7 +30,7 @@ a {
 .main-header {
   background-color: #fff;
   position: relative;
-  z-index: 1000;
+  z-index: 9999999999999999999999999;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
 }
 
@@ -327,6 +327,7 @@ a {
 }
 
 /* Footer Style End */
+
 /* Hero Section CSS Start */
 .hero-section {
   position: relative;
@@ -383,8 +384,8 @@ a {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   width: 947px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   padding-right: 100px;
   padding-left: 50px;
   clip-path: polygon(0 0, 92% 0, 100% 100%, 0% 100%);
@@ -400,5 +401,62 @@ a {
 .hero-countdown p {
   font-size: 12px;
   color: #fff;
+}
+@media all and (max-width: 1125px) {
+  .hero-countdown {
+    width: 80%;
+  }
+}
+@media all and (max-width: 1125px) {
+  .hero-countdown {
+    width: 80%;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 767px) {
+  .hero-countdown {
+    padding-left: 10px;
+    padding-right: 50px;
+  }
+  .hero-countdown h2 {
+    font-size: 30px;
+  }
+}
+@media all and (min-width: 350px) and (max-width: 499px) {
+  .hero-countdown {
+    gap: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+    padding-left: 10px;
+  }
+  .hero-countdown h2 {
+    font-size: 26px;
+  }
+  .hero-countdown p {
+    font-size: 10px;
+  }
+}
+@media all and (max-width: 499px) {
+  .hero-cover-content h1 {
+    font-size: 42px;
+  }
+}
+@media all and (max-width: 390px) {
+  .hero-cover-content h1 {
+    font-size: 36px;
+  }
+}
+@media all and (max-width: 380px) {
+  .hero-buttons a {
+    display: block;
+  }
+  .hero-buttons a:first-child {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .hero-section {
+    padding-top: 170px;
+    padding-bottom: 240px;
+  }
 }
 /* Hero Section CSS End */
