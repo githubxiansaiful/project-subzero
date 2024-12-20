@@ -397,6 +397,7 @@ a {
   font-size: 51px;
   color: #D82024;
   font-weight: 500;
+  position: relative;
 }
 .hero-countdown p {
   font-size: 12px;
@@ -479,5 +480,8 @@ a {
   .hero-cover-content h1 {
     font-size: 30px;
   }
+}
+.hero-countdown h2:after {
+  content: "+";
 }
 /* Hero Section CSS End */

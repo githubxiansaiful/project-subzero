@@ -70,15 +70,15 @@
     </div>
     <div class="hero-countdown">
         <div class="single-count-down">
-            <h2>5900+</h2>
+            <h2>5900</h2>
             <p>Car Owners Served</p>
         </div>
         <div class="single-count-down">
-            <h2>1300+</h2>
+            <h2>1300</h2>
             <p>GTRs Tuned</p>
         </div>
         <div class="single-count-down">
-            <h2>3700+</h2>
+            <h2>3700</h2>
             <p>Engines Built</p>
         </div>
     </div>
@@ -137,7 +137,33 @@
 
 
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            function animateCounter(element, start, end, duration) {
+                const range = end - start;
+                let current = start;
+                const increment = Math.ceil(range / (duration / 50)); // Increment in larger steps
+                const stepTime = 80; // Smaller interval for faster updates
+    
+                const timer = setInterval(function () {
+                    current += increment;
+                    if ((increment > 0 && current >= end) || (increment < 0 && current <= end)) {
+                        current = end; // Set final value when overshooting
+                        clearInterval(timer);
+                    }
+                    $(element).text(current);
+                }, stepTime);
+            }
+    
+            $('.hero-countdown .single-count-down h2').each(function () {
+                const $this = $(this);
+                const countTo = parseInt($this.text().replace(/[^\d]/g, ''), 10); // Extract numbers
+                animateCounter($this, 0, countTo, 800); // Faster animation (800ms)
+            });
+        });
+    </script>
+    
     <script>
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
