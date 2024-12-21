@@ -880,4 +880,10 @@ a {
 .testimonial-slider .slick-list.draggable {
   z-index: 9999999999999;
 }
+.xs-sliders {
+  max-width: 643px;
+  margin: auto;
+  width: 100%;
+  position: relative;
+}
 /* Home Testomonials CSS End */
