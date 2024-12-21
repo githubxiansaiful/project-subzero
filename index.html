@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -222,6 +224,58 @@
         </div>
     </div>
 
+    <!-- Best Sellers -->
+    <div class="home-best-sellers">
+        <div class="container">
+            <div class="home-services-section-title">
+                <h2>Best Sellers</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Best Sellers -->
+    <div class="home-testomonials">
+        <div class="container">
+            <div class="home-services-section-title home-testimonial-heading">
+                <h2>Testomonials</h2>
+                <div class="quote-icon">
+                    <img src="https://cdn.shopify.com/s/files/1/0892/0075/5051/files/quote-icon.png?v=1734817873">
+                </div>
+                <div class="xs-sliders">
+                    <div class="testimonial-slider">
+                        <div class="testimonial">
+                            <p class="quote-author">John Doe</p>
+                            <p class="quote-text">SubZero Garage is exceptional! Their expertise and professionalism
+                                exceeded my expectations. The team is knowledgeable, friendly, and dedicated to
+                                delivering top-notch service. My car has never run better, and the detailed explanations
+                                they provided gave me complete confidence in their work. The facility is clean and
+                                well-organized, reflecting their high standards. I highly recommend SubZero Garage to
+                                anyone looking for reliable, high-quality automotive care. Five stars well deserved!</p>
+                        </div>
+                        <div class="testimonial">
+                            <p class="quote-author">John Doe</p>
+                            <p class="quote-text">SubZero Garage is exceptional! Their expertise and professionalism
+                                exceeded my expectations. The team is knowledgeable, friendly, and dedicated to
+                                delivering top-notch service. My car has never run better, and the detailed explanations
+                                they provided gave me complete confidence in their work. The facility is clean and
+                                well-organized, reflecting their high standards. I highly recommend SubZero Garage to
+                                anyone looking for reliable, high-quality automotive care. Five stars well deserved!</p>
+                        </div>
+                        <div class="testimonial">
+                            <p class="quote-author">John Doe</p>
+                            <p class="quote-text">SubZero Garage is exceptional! Their expertise and professionalism
+                                exceeded my expectations. The team is knowledgeable, friendly, and dedicated to
+                                delivering top-notch service. My car has never run better, and the detailed explanations
+                                they provided gave me complete confidence in their work. The facility is clean and
+                                well-organized, reflecting their high standards. I highly recommend SubZero Garage to
+                                anyone looking for reliable, high-quality automotive care. Five stars well deserved!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <!-- Footer -->
@@ -276,6 +330,7 @@
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
         $(document).ready(function () {
             function animateCounter(element, start, end, duration) {
@@ -298,6 +353,20 @@
                 const $this = $(this);
                 const countTo = parseInt($this.text().replace(/[^\d]/g, ''), 10); // Extract numbers
                 animateCounter($this, 0, countTo, 800); // Faster animation (800ms)
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.testimonial-slider').slick({
+                dots: true,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
             });
         });
     </script>

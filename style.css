@@ -627,9 +627,9 @@ a {
   .car-types {
     grid-template-columns: repeat(1, 1fr);
   }
-
+  .home-services-section-title h2,
   .car-type-section-title h2 {
-    font-size: 32px;
+    font-size: 30px !important;
   }
 
   .car-type-content h2 {
@@ -808,3 +808,76 @@ a {
     overflow: hidden;
   }
 }
+/* Home Services CSS End */
+
+/* Home Best Sellers CSS Start */
+.home-best-sellers {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+/* Home Best Sellers CSS End */
+
+/* Home Testomonials CSS Start */
+.home-testomonials {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.quote-icon {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.home-testimonial-heading h2 {
+  padding-bottom: 10px !important;
+}
+.testimonial-slider {
+  max-width: 643px;
+  margin: auto;
+  padding: 20px;
+  padding-bottom: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.06);
+  position: relative;
+}
+.testimonial-slider .quote-author {
+  font-size: 20px;
+  font-weight: 600;
+  color: #EF1B20;
+  margin-bottom: 10px;
+}
+.testimonial-slider:before {
+  z-index: 99999999999;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  max-width: 214px;
+  height: 9px;
+  background: #EF1B20;
+  width: 214px;
+}
+.testimonial-slider .quote-text {
+  font-weight: 400;
+  line-height: 1.5;
+}
+.testimonial-slider ul.slick-dots {
+  bottom: -40px;
+}
+.xs-sliders:before {
+  content: "";
+  width: 190px;
+  height: 203px;
+  position: absolute;
+  background: url(https://cdn.shopify.com/s/files/1/0892/0075/5051/files/red-ribbon-logo-png_1.png?v=1734818826);
+  z-index: 99;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.testimonial-slider .slick-list.draggable {
+  z-index: 9999999999999;
+}
+/* Home Testomonials CSS End */
