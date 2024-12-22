@@ -230,6 +230,99 @@
             <div class="home-services-section-title">
                 <h2>Best Sellers</h2>
             </div>
+            <div class="best-sellers-product-slider">
+                <div class="best-sellers-single-slide">
+                    <a href="#">
+                        <div class="best-seller-slide-image">
+                            <img src="https://cdn.shopify.com/s/files/1/0892/0075/5051/files/Wheel-Assembly-Supplier1.png"
+                                alt="">
+                        </div>
+                        <div class="best-seller-slide-info">
+                            <h2>Wheel Assembly</h2>
+                            <p class="best-seller-price-add-to-cart"><span class="slide-price">$124.00</span><span
+                                    class="slide-add-to-cart"><i class="fa-solid fa-plus"></i></span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="best-sellers-single-slide">
+                    <a href="#">
+                        <div class="best-seller-slide-image">
+                            <img src="https://cdn.shopify.com/s/files/1/0892/0075/5051/files/Wheel-Assembly-Supplier1.png"
+                                alt="">
+                        </div>
+                        <div class="best-seller-slide-info">
+                            <h2>Wheel Assembly</h2>
+                            <p class="best-seller-price-add-to-cart"><span class="slide-price">$124.00</span><span
+                                    class="slide-add-to-cart"><i class="fa-solid fa-plus"></i></span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="best-sellers-single-slide">
+                    <a href="#">
+                        <div class="best-seller-slide-image">
+                            <img src="https://cdn.shopify.com/s/files/1/0892/0075/5051/files/Wheel-Assembly-Supplier1.png"
+                                alt="">
+                        </div>
+                        <div class="best-seller-slide-info">
+                            <h2>Wheel Assembly</h2>
+                            <p class="best-seller-price-add-to-cart"><span class="slide-price">$124.00</span><span
+                                    class="slide-add-to-cart"><i class="fa-solid fa-plus"></i></span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="best-sellers-single-slide">
+                    <a href="#">
+                        <div class="best-seller-slide-image">
+                            <img src="https://cdn.shopify.com/s/files/1/0892/0075/5051/files/Wheel-Assembly-Supplier1.png"
+                                alt="">
+                        </div>
+                        <div class="best-seller-slide-info">
+                            <h2>Wheel Assembly</h2>
+                            <p class="best-seller-price-add-to-cart"><span class="slide-price">$124.00</span><span
+                                    class="slide-add-to-cart"><i class="fa-solid fa-plus"></i></span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="best-sellers-single-slide">
+                    <a href="#">
+                        <div class="best-seller-slide-image">
+                            <img src="https://cdn.shopify.com/s/files/1/0892/0075/5051/files/Wheel-Assembly-Supplier1.png"
+                                alt="">
+                        </div>
+                        <div class="best-seller-slide-info">
+                            <h2>Wheel Assembly</h2>
+                            <p class="best-seller-price-add-to-cart"><span class="slide-price">$124.00</span><span
+                                    class="slide-add-to-cart"><i class="fa-solid fa-plus"></i></span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="best-sellers-single-slide">
+                    <a href="#">
+                        <div class="best-seller-slide-image">
+                            <img src="https://cdn.shopify.com/s/files/1/0892/0075/5051/files/Wheel-Assembly-Supplier1.png"
+                                alt="">
+                        </div>
+                        <div class="best-seller-slide-info">
+                            <h2>Wheel Assembly</h2>
+                            <p class="best-seller-price-add-to-cart"><span class="slide-price">$124.00</span><span
+                                    class="slide-add-to-cart"><i class="fa-solid fa-plus"></i></span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="best-sellers-single-slide">
+                    <a href="#">
+                        <div class="best-seller-slide-image">
+                            <img src="https://cdn.shopify.com/s/files/1/0892/0075/5051/files/Wheel-Assembly-Supplier1.png"
+                                alt="">
+                        </div>
+                        <div class="best-seller-slide-info">
+                            <h2>Wheel Assembly</h2>
+                            <p class="best-seller-price-add-to-cart"><span class="slide-price">$124.00</span><span
+                                    class="slide-add-to-cart"><i class="fa-solid fa-plus"></i></span></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -356,20 +449,73 @@
             });
         });
     </script>
+    <!-- Product Slider Start -->
+    <script>
+        $(document).ready(function () {
+            $('.best-sellers-product-slider').slick({
+                dots: false,           // Show dots for navigation
+                autoplay: true,       // Enable autoplay
+                autoplaySpeed: 3000,  // Speed of autoplay
+                infinite: true,       // Enable infinite looping
+                speed: 500,           // Transition speed
+                slidesToShow: 6,      // Show 6 items at a time
+                slidesToScroll: 1,    // Scroll 1 item at a time
+                prevArrow: '<button class="slick-prev"><i class="fa-solid fa-chevron-left"></i></button>',
+                nextArrow: '<button class="slick-next"><i class="fa-solid fa-chevron-right"></i></button>',
+                responsive: [         // Responsive settings
+                    {
+                        breakpoint: 1250,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+    <!-- Product Slider Start -->
+
+    <!-- Testimonial Slider Start -->
     <script>
         $(document).ready(function () {
             $('.testimonial-slider').slick({
-                dots: true,
-                arrows: false,
+                dots: false,
+                arrows: true,
                 autoplay: true,
                 autoplaySpeed: 3000,
                 infinite: true,
                 speed: 500,
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                prevArrow: '<button class="slick-prev"><i class="fa-solid fa-chevron-left"></i></button>',
+                nextArrow: '<button class="slick-next"><i class="fa-solid fa-chevron-right"></i></button>'
             });
         });
     </script>
+
+    <!-- Testimonial Slider End -->
 
     <script>
         const menuToggle = document.getElementById('menu-toggle');

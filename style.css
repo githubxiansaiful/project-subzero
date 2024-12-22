@@ -627,6 +627,7 @@ a {
   .car-types {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .home-services-section-title h2,
   .car-type-section-title h2 {
     font-size: 30px !important;
@@ -742,9 +743,11 @@ a {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+
   .home-services-cards.xs-card-services-first-box .home-service-card-single {
     width: 100% !important;
   }
+
   .home-services-cards.xs-card-services-first-box .home-service-card-single .hscs-card-image {
     height: 500px;
     overflow: hidden;
@@ -752,24 +755,30 @@ a {
     border-top-right-radius: 20px;
   }
 }
+
 @media all and (max-width: 767px) {
   .home-services-cards.xs-card-services-first-box {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+
   .hsct-dual-card {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .home-services-cards.xs-card-services-first-box .home-service-card-single {
     width: 100% !important;
   }
+
   .home-services-cards.xs-services-last-part {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+
   .home-service-card-single {
     width: 100%;
   }
+
   .home-services-cards.xs-card-services-first-box .home-service-card-single .hscs-card-image {
     height: 300px;
     overflow: hidden;
@@ -777,58 +786,61 @@ a {
     border-top-right-radius: 20px;
   }
 }
+
 .home-service-card-single,
 .hsct-card-single {
   transition: .3s;
   transform: scale(1);
 }
+
 .home-service-card-single:hover,
 .hsct-card-single:hover {
   transform: scale(1.01);
 }
+
 .home-services-cards.xs-card-services-first-box .hscs-card-image {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+
 @media all and (min-width: 981px) and (max-width: 1024px) {
   .home-services-cards.xs-card-services-first-box .home-service-card-single .hscs-card-image {
     height: 475px;
     overflow: hidden;
   }
 }
+
 @media all and (min-width: 1025px) and (max-width: 1254px) {
   .home-services-cards.xs-card-services-first-box .home-service-card-single .hscs-card-image {
     height: 500px;
     overflow: hidden;
   }
 }
+
 @media all and (min-width: 1380px) {
   .home-services-cards.xs-card-services-first-box .home-service-card-single .hscs-card-image {
     height: 658px;
     overflow: hidden;
   }
 }
-/* Home Services CSS End */
 
-/* Home Best Sellers CSS Start */
-.home-best-sellers {
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
-/* Home Best Sellers CSS End */
+/* Home Services CSS End */
 
 /* Home Testomonials CSS Start */
 .home-testomonials {
   padding-top: 20px;
   padding-bottom: 50px;
 }
+
 .quote-icon {
   text-align: center;
   margin-bottom: 30px;
 }
+
 .home-testimonial-heading h2 {
   padding-bottom: 10px !important;
 }
+
 .testimonial-slider {
   max-width: 643px;
   margin: auto;
@@ -836,15 +848,17 @@ a {
   padding-bottom: 30px;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.06);
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.06);
   position: relative;
 }
+
 .testimonial-slider .quote-author {
   font-size: 20px;
   font-weight: 600;
   color: #EF1B20;
   margin-bottom: 10px;
 }
+
 .testimonial-slider:before {
   z-index: 99999999999;
   content: "";
@@ -856,13 +870,16 @@ a {
   background: #EF1B20;
   width: 214px;
 }
+
 .testimonial-slider .quote-text {
   font-weight: 400;
   line-height: 1.5;
 }
+
 .testimonial-slider ul.slick-dots {
   bottom: -40px;
 }
+
 .xs-sliders:before {
   content: "";
   width: 190px;
@@ -877,13 +894,130 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .testimonial-slider .slick-list.draggable {
   z-index: 9999999999999;
 }
+
 .xs-sliders {
   max-width: 643px;
   margin: auto;
   width: 100%;
   position: relative;
+  padding-bottom: 40px;
 }
+
 /* Home Testomonials CSS End */
+
+/* Home Best Sellers CSS Start */
+.home-best-sellers {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+/* Home Best Sellers CSS End */
+.best-sellers-product-slider .slick-track {}
+
+.best-sellers-single-slide {
+  box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 11%);
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.best-seller-slide-image {
+  width: 100%;
+  height: 200px;
+}
+
+.best-seller-slide-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.best-seller-slide-info {
+  padding: 10px
+}
+
+.best-seller-slide-info h2 {
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+p.best-seller-price-add-to-cart {
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span.slide-price {
+  color: #000;
+  font-weight: 600;
+}
+
+span.slide-add-to-cart {
+  background: #FCE6E6;
+  color: #EF1B20;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 2;
+}
+
+@media all and (max-width: 767px) {
+  .best-seller-slide-image {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  background: transparent;
+  /* Transparent background */
+  border: none;
+  /* Remove border */
+  font-size: 24px;
+  /* Adjust icon size */
+  color: #000;
+  /* Icon color */
+  z-index: 1000;
+  /* Ensure arrows are visible */
+}
+
+.slick-prev {
+  left: -40px;
+  /* Position left arrow */
+}
+
+.slick-next {
+  right: -40px;
+  /* Position right arrow */
+}
+
+.slick-next:focus,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-prev:hover {
+  color: #000 !important;
+}
+
+@media all and (max-width: 767px) {
+  .slick-next {
+    right: 0;
+    top: -40px;
+  }
+
+  .slick-prev {
+    left: auto;
+    right: 30px;
+    top: -40px;
+  }
+}
